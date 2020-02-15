@@ -4,8 +4,11 @@ import NavBar from "./components/NavBar";
 import { useAuth0 } from "./react-auth0-spa";
 import { Router, Route, Switch } from "react-router-dom";
 import PrivateRoute from "./components/PrivateRoute";
-import Profile from "./components/Profile";
 import history from "./utils/history";
+
+import Profile from "./components/Profile";
+import About from "./components/About";
+import Contact from "./components/Contact";
 
 function App() {
   const { loading } = useAuth0();
@@ -23,6 +26,8 @@ function App() {
         </header>
         <Switch>
           <Route path="/" exact />
+          <Route path="/about" component={About} />
+          <Route path="/contact" component={Contact} />
           <PrivateRoute path="/profile" component={Profile} />
         </Switch>
       </Router>
