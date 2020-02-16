@@ -10,7 +10,7 @@ const NavBar = () => {
     return (
         <div className="flex items-center justify-between flex-wrap bg-green-400 p-6">
             <div className="flex items-center flex-shrink-0 text-white mr-6">
-                <img className="fill-current h-8 w-8 mr-2" width="54" height="54" src={navImage}/>
+                <img className="fill-current h-8 w-8 mr-2" width="54" height="54" src={navImage} alt="Stock Tracker Brand" />
                 <span className="font-semibold text-xl tracking-tight">Stock Tracker</span>
             </div>
                 

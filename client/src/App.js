@@ -6,6 +6,7 @@ import { Router, Route, Switch } from "react-router-dom";
 import PrivateRoute from "./components/PrivateRoute";
 import history from "./utils/history";
 
+import Landing from "./components/Landing";
 import Profile from "./components/Profile";
 import About from "./components/About";
 import Contact from "./components/Contact";
@@ -25,7 +26,7 @@ function App() {
           <NavBar />
         </header>
         <Switch>
-          <Route path="/" exact />
+          <Route path="/" exact component={Landing} />
           <Route path="/about" component={About} />
           <Route path="/contact" component={Contact} />
           <PrivateRoute path="/profile" component={Profile} />
