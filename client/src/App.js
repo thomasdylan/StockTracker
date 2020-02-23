@@ -8,6 +8,7 @@ import history from "./utils/history";
 
 import Landing from "./components/Landing";
 import Profile from "./components/Profile";
+import MyStocks from "./components/MyStocks";
 import About from "./components/About";
 import Contact from "./components/Contact";
 
@@ -29,11 +30,11 @@ function App() {
           <Route path="/" exact component={Landing} />
           <Route path="/about" component={About} />
           <Route path="/contact" component={Contact} />
+          <PrivateRoute path="/mystocks" component={MyStocks} />
           <PrivateRoute path="/profile" component={Profile} />
         </Switch>
       </Router>
 
-      <div>Icons made by <a href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
     </div>
   );
 }
