@@ -37,9 +37,9 @@ const MyStocks = () => {
                         const symbol = result['1. symbol']
                         const name= result['2. name']
                         return(
-                            <div className="max-w-sm rounded overflow-hidden border-b border-b-2 border-green-500 py-2">
-                                <h1 className="ml-1 font-bold text-xl">{symbol}</h1>
-                                <p className="mr-1 text-gray-700 text-base">{name}</p>                                
+                            <div className="flex flex-row max-w-sm overflow-hidden border-b border-b-2 border-green-500 py-2">
+                                <h1 className="ml-1 mr-3 font-bold text-lg">{symbol}</h1>
+                                <p className="mr-1 text-gray-700 text-md">{name}</p>                                
                             </div>
                         )
                     })}
