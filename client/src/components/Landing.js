@@ -54,7 +54,7 @@ export default function Landing() {
                 <div className="w-1/4 m-6 mt-4 mb-4 px-6 py-4 bg-white shadow-lg rounded-lg overflow-hidden">
                     <img className="fill-current h-32 w-32 mb-3 mx-auto" width="32" height="32" src={pow} alt="Pop Out Window" />
                     <h2 className="font-bold">3. Create Pop Out Window</h2>
-                    <p className="text-justify-center">Create your real time track ticker.</p>
+                    <p className="text-justify-center">Create your real time stock ticker.</p>
                 </div>
             </div>
         </div>

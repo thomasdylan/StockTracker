@@ -18,7 +18,7 @@ const NavBar = () => {
                 {isAuthenticated && (
                     <div className="text-lg">
                         <Link className="block mt-4 lg:inline-block lg:mt-0 text-teal-100 hover:text-white ml-4" to="/">Home</Link>&nbsp;
-                        <Link className="block mt-4 lg:inline-block lg:mt-0 text-teal-100 hover:text-white ml-4" to="/mystocks">My Stocks</Link>
+                        <Link className="block mt-4 lg:inline-block lg:mt-0 text-teal-100 hover:text-white ml-4" to="/mystocks">My Stocks</Link>&nbsp;
                         <Link className="block mt-4 lg:inline-block lg:mt-0 text-teal-100 hover:text-white ml-4" to="/profile">Profile</Link>
                     </div>
                 )}

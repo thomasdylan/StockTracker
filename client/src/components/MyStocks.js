@@ -39,10 +39,10 @@ const MyStocks = () => {
                         const symbol = result['1. symbol']
                         const name= result['2. name']
                         return(
-                            <div className="flex flex-row  max-w-lg overflow-hidden border-b border-b-2 border-green-500 py-2">
+                            <div className="flex flex-row max-w-lg overflow-hidden border-b border-b-2 border-green-500 py-2">
                                 <h1 className="ml-1 mr-3 font-bold text-lg">{symbol}</h1>
-                                <p className="whitespace-no-wrap truncate mr-1 text-gray-700 text-md">{name}</p>    
-                                <button className="ml-auto mr-2 fill-current h-6 w-6"><img src={plus} alt="add"/></button>                            
+                                <p className="max-w-0.625rem truncate text-gray-700 text-md">{name}</p>    
+                                <button className="flex-none ml-auto mr-2 fill-current h-6 w-6"><img src={plus} alt="add"/></button>                            
                             </div>
                         )
                     })}
