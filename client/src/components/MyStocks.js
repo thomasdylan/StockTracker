@@ -55,7 +55,9 @@ const MyStocks = () => {
                         )
                     })}
                 </div>
-                <div className="mt-2 mr-8 flex flex-row max-w-lg overflow-hidden border-b border-b-3 border-green-500 py-2">
+            </div>
+            <div className="mt-2 ml-8">
+                <div className="flex flex-row max-w-lg overflow-hidden border-b border-b-3 border-green-500 py-2">
                     {!userSymbols.length ?
                         (<h1 className="ml-1 mr-3 font-bold text-lg">No symbols added.</h1>) : (<h1 className="ml-1 mr-3 font-bold text-lg">Stuff here.</h1>)}
                 </div>
