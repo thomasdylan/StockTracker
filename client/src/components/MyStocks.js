@@ -18,7 +18,7 @@ const MyStocks = () => {
                 setUserSymbols(res.data);
             });
         console.log(userSymbols);
-    });
+    }, [getSymbols]);
 
     const FormSubmit = (e) => {
         e.preventDefault();
@@ -75,11 +75,20 @@ const MyStocks = () => {
                     })}
                 </div>
             </div>
-            <div className="w-1/2 mt-2 ml-8">
-                <div className="flex flex-row max-w-lg overflow-hidden border-b border-b-3 border-green-500 py-2">
-                    {!userSymbols ?
-                        (<h1 className="ml-1 mr-3 font-bold text-lg">No symbols added for {user.name}.</h1>) : (<h1 className="ml-1 mr-3 font-bold text-lg">{userSymbols}</h1>)}
-                </div>
+            <div className="w-1/2 mt-2 ml-8">                
+                {!userSymbols ?
+                    (<div className="flex flex-row max-w-lg overflow-hidden border-b border-b-3 border-green-500 py-2">
+                        <h1 className="ml-1 mr-3 font-bold text-lg">No symbols added for {user.name}.</h1>
+                     </div>) : 
+                    (userSymbols.map(stock => {
+                        return(
+                            <div className="flex flex-row max-w-lg overflow-hidden border-b border-b-3 border-green-500 py-2">
+                                <h1 className="ml-1 mr-3 font-bold text-lg">{stock.symbol}</h1>
+                                <p className="max-w-0.625rem truncate text-gray-700 text-md">{stock.name}</p> 
+                            </div>
+                        )
+                    }))
+                }
             </div>
         </div>
     )
