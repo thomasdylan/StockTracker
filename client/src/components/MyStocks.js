@@ -88,7 +88,8 @@ const MyStocks = () => {
                     })}
                 </div>
             </div>
-            <div className="w-1/2 mt-2 ml-8">                
+            <div className="w-1/2 mt-2 ml-8">  
+                <div className="flex flex-row max-w-lg overflow-hidden mt-2 mb-4 font-bold text-lg border-b border-b-2 border-green-500 py-2">Current Symbols</div>              
                 {!userSymbols ?
                     (<div className="flex flex-row max-w-lg overflow-hidden border-b border-b-3 border-green-500 py-2">
                         <h1 className="ml-1 mr-3 font-bold text-lg">No symbols added for {user.name}.</h1>
