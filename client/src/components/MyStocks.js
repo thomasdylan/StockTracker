@@ -5,6 +5,7 @@ import API from '../utils/API';
 
 import plus from '../images/plus.svg';
 import minus from '../images/minus.svg';
+import popout from '../images/pop-out-window.svg';
 
 const MyStocks = () => {
 
@@ -59,7 +60,7 @@ const MyStocks = () => {
 
     return (
         <div className="flex mb-4">
-            <div className="w-1/2 mt-2 ml-8">
+            <div className="w-1/3 mt-2 ml-8">
                 <form className="w-full max-w-lg" onSubmit={FormSubmit}>
                     <div className="flex items-center border-b border-b-2 border-green-500 py-2">
                         <input className="appearance-none bg-transparent border-none w-full text-gray-700 mr-3 py-1 px-2 leading-tight focus:outline-none" 
@@ -88,8 +89,8 @@ const MyStocks = () => {
                     })}
                 </div>
             </div>
-            <div className="w-1/2 mt-2 ml-8">  
-                <div className="flex flex-row max-w-lg overflow-hidden mt-2 mb-4 font-bold text-lg border-b border-b-2 border-green-500 py-2">Current Symbols</div>              
+            <div className="w-1/3 mt-2 ml-8">  
+                <div className="flex flex-row max-w-lg overflow-hidden mt-2 font-bold text-lg border-b border-b-3 border-green-500 py-2">Current Symbols</div>              
                 {!userSymbols ?
                     (<div className="flex flex-row max-w-lg overflow-hidden border-b border-b-3 border-green-500 py-2">
                         <h1 className="ml-1 mr-3 font-bold text-lg">No symbols added for {user.name}.</h1>
@@ -104,6 +105,10 @@ const MyStocks = () => {
                         )
                     }))
                 }
+            </div>
+            <div className="w-1/3 mt-2">
+                <button className="flex-none mt-8 ml-auto mr-2 fill-current h-12 w-12"><img src={popout} alt="pop out" /></button>
+                <h1 className="ml-1 mr-3 font-bold text-lg">Create Pop Out Window</h1>
             </div>
         </div>
     )
