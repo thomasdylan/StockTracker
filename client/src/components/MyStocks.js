@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
+import PopoutWindow from 'react-popout'
 import { useAuth0 } from "../react-auth0-spa";
 import API from '../utils/API';
 
