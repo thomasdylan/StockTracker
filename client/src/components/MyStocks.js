@@ -1,8 +1,9 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
-import PopoutWindow from 'react-popout'
+import Reactpip from 'react-picture-in-picture';
 import { useAuth0 } from "../react-auth0-spa";
 import API from '../utils/API';
+import PopOut from './PopOutTicker';
 
 import plus from '../images/plus.svg';
 import minus from '../images/minus.svg';
@@ -14,6 +15,7 @@ const MyStocks = () => {
     const [searchResults, setSearchResults] = useState([]);
     const [userSymbols, setUserSymbols] = useState([]);
     const [isUpdating, setUpdating] = useState(false);
+    const [active, setActive] = useState(false);
     const { user } = useAuth0();
 
     useEffect(() => {
@@ -58,6 +60,8 @@ const MyStocks = () => {
             .then(() => console.log("Sucessfully deleted symbol"))
             .catch(err => console.log(err));
     }
+
+    const placeholder = () => console.log("clicked");
 
     return (
         <div className="flex mb-4">
@@ -108,7 +112,7 @@ const MyStocks = () => {
                 }
             </div>
             <div className="w-1/3 mt-2">
-                <button className="flex-none mt-8 ml-auto mr-2 fill-current h-12 w-12"><img src={popout} alt="pop out" /></button>
+                <button className="flex-none mt-8 ml-auto mr-2 fill-current h-12 w-12" onClick={() => placeholder()}><img src={popout} alt="pop out" /></button>
                 <h1 className="ml-1 mr-3 font-bold text-lg">Create Pop Out Window</h1>
             </div>
         </div>
