@@ -15,7 +15,6 @@ const MyStocks = () => {
     const [searchResults, setSearchResults] = useState([]);
     const [userSymbols, setUserSymbols] = useState([]);
     const [isUpdating, setUpdating] = useState(false);
-    const [active, setActive] = useState(false);
     const { user } = useAuth0();
 
     useEffect(() => {
