@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
-import Reactpip from 'react-picture-in-picture';
 import { useAuth0 } from "../react-auth0-spa";
 import API from '../utils/API';
 import PopOut from './PopOutTicker';
