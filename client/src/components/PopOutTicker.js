@@ -1,9 +1,11 @@
 import React from 'react'
 
-export default function PopOutTicker() {
+const PopOutTicker = (props) => {
     return (
         <div>
             <h1>Test</h1>
         </div>
     )
 }
+
+export default PopOutTicker

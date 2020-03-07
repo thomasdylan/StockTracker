@@ -31,9 +31,9 @@
     "react": "^16.13.0",
     "react-dom": "^16.13.0",
     "react-picture-in-picture": "^1.0.0",
-    "react-popout": "^1.0.2",
     "react-router-dom": "^5.1.2",
     "tailwindcss": "^1.2.0",
+    "use-open-window": "^1.2.0",
     "use-pip": "^1.0.0",
     "useaudiopictureinpicture": "^1.2.0"
   }

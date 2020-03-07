@@ -2,11 +2,10 @@ import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import { useAuth0 } from "../react-auth0-spa";
 import API from '../utils/API';
-import PopOut from './PopOutTicker';
-
 import plus from '../images/plus.svg';
 import minus from '../images/minus.svg';
 import popout from '../images/pop-out-window.svg';
+import PopOutTicker from './PopOutTicker';
 
 const MyStocks = () => {
 

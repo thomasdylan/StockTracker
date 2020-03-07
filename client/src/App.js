@@ -11,6 +11,7 @@ import Profile from "./components/Profile";
 import MyStocks from "./components/MyStocks";
 import About from "./components/About";
 import Contact from "./components/Contact";
+import PopOutTicker from "./components/PopOutTicker";
 
 function App() {
   const { loading } = useAuth0();
@@ -32,6 +33,7 @@ function App() {
           <Route path="/contact" component={Contact} />
           <PrivateRoute path="/mystocks" component={MyStocks} />
           <PrivateRoute path="/profile" component={Profile} />
+          <Route path="/ticker" component={PopOutTicker} />
         </Switch>
       </Router>
 
